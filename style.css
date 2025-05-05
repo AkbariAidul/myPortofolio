@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background: url('Desain gaje.png') no-repeat center center/cover;
+}
+.card {
+    background: whitesmoke;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 600px;
+    position: relative;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 12px 0;
+    padding: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background: #0073b1;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
+}
+
+.links a.github {
+    background: #333;
+}
+.links a.email {
+    background: #d14836;
+}
+
+.links a:hover {
+    background: rgba(0, 115, 177, 0.6); /* jadi transparan */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.link-item span::before {
+    font-size: 1.3em;
+}
+
+.skill span {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bar .percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    line-height: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+.fill {
+    height: 100%;
+    background-color: #0073b1;
+    width: 0;
+    transition: width 1s ease;
+}
+button#toggleBtn {
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #0073b1;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button#toggleBtn:hover {
+    background-color: #005582;
+}
